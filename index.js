@@ -54,3 +54,10 @@ const wagesEarnedOnDate = function(dateSought){
         * this.payPerHour
     return parseFloat(rawWage.toString())
 }
+
+const allWagesFor = function(){
+    let eligibleDates = this.timeInEvents.map(function(e){
+        return e.date
+    })
+    
+    
